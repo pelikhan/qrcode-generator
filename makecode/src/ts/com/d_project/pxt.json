@@ -1,0 +1,29 @@
+{
+    "name": "qrcode-generator",
+    "dependencies": {
+        "core": "*",
+        "screen": "*"
+    },
+    "files": [
+        "qrcode/bitbuffer.ts",
+        "qrcode/errorcorrectlevel.ts",
+        "qrcode/maskpattern.ts",
+        "qrcode/mode.ts",
+        "qrcode/polynomial.ts",
+        "qrcode/qr8bitbyte.ts",
+        "qrcode/qralphanum.ts",
+        "qrcode/qrcode.ts",
+        "qrcode/qrdata.ts",
+        "qrcode/qrkanji.ts",
+        "qrcode/qrnumber.ts",
+        "qrcode/qrmath.ts",
+        "qrcode/qrutil.ts",
+        "qrcode/rsblock.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "testDependencies": {
+        "game": "*"
+    }
+}
