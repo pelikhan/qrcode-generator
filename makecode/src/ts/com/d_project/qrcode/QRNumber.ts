@@ -17,15 +17,15 @@ namespace com.d_project.qrcode {
       var i = 0;
 
       while (i + 2 < data.length) {
-        buffer.put(QRNumber.strToNum(data.substring(i, i + 3) ), 10);
+        buffer.put(QRNumber.strToNum(data.substr(i, 3) ), 10);
         i += 3;
       }
 
       if (i < data.length) {
         if (data.length - i == 1) {
-          buffer.put(QRNumber.strToNum(data.substring(i, i + 1) ), 4);
+          buffer.put(QRNumber.strToNum(data.substr(i, 1) ), 4);
         } else if (data.length - i == 2) {
-          buffer.put(QRNumber.strToNum(data.substring(i, i + 2) ), 7);
+          buffer.put(QRNumber.strToNum(data.substr(i, 2) ), 7);
         }
       }
     }
